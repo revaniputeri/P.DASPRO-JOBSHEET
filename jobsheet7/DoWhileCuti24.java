@@ -10,7 +10,7 @@ public class DoWhileCuti24 {
 
         System.out.print("Jatah cuti: ");
         jatahCuti = sc.nextInt();
-
+        boolean isEmpty = false;
         do {
             System.out.print("Apakah anda ingin mengambil cuti (y/t)? ");
             konfirmasi = sc.next();
@@ -23,9 +23,9 @@ public class DoWhileCuti24 {
                     System.out.println("Sisa jatah cuti: "+jatahCuti);
                 } else {
                     System.out.println("Sisa jatah cuti Anda tidak mencukupi");
-                    break;
+                    isEmpty = true;
                 }
             }
-        } while (jatahCuti>0);
+        } while (jatahCuti>0 || isEmpty!=false);
     }
 }
