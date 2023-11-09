@@ -18,10 +18,15 @@ public class NestedLoop_2341760056 {
         for (int i = 0; i < temps.length; i++) {
             System.out.println("Kota ke-" + (i + 1) + ": ");
             // Menggunakan foreach untuk menampilkan array
-            for (double temp : temps[i]) {
-                System.out.print(temp + " ");
+            double total = 0;
+            for (double reva : temps[i]) {
+                System.out.print(reva + " ");
+
+                // SUM untuk setiap kotanya
+                total += reva;
             }
-            System.out.println();
+            double average = total / temps[i].length; // menghitung rata2 dan disumpan dalam variable
+            System.out.printf("\nRata-rata: %.2f\n", average); // print rata2
         }
     }
 }
