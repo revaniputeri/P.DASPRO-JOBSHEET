@@ -7,7 +7,7 @@ public class Square {
         System.out.print("Masukkan nilai N: ");
         int N = sc.nextInt();
         // outer loop untuk menampilkan banyaknya baris inner loop yang di tampilkan
-        for (int iOuter = 0; iOuter <= N; iOuter++) { 
+        for (int iOuter = 1; iOuter <= N; iOuter++) { 
             // inner loop untuk menampilkan banyak N kesamping / sebagai kolom
             for (int i = 0; i <= N; i++) { 
                 System.out.print("*");
