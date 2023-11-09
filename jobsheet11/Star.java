@@ -10,7 +10,7 @@ public class Star {
         int N = sc.nextInt();
 
         //perulangan untuk menampilkan * sebanyak nilai N
-        for (int i = 0; i <= N; i++) {
+        for (int i = 0; i > N; i++) {
             System.out.print("*");
         }
     }
